@@ -2,6 +2,9 @@ from socsa.light_intensity_parameters import reorganize_data
 from socsa.light_intensity_jv import jv
 
 import os
+import sys
+
+sys.path.append("..")
 
 
 if __name__ == "__main__":

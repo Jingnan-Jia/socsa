@@ -12,7 +12,9 @@ import numpy as np
 import datetime
 
 from typing import List, Sequence, Dict
+import sys
 
+sys.path.append("..")
 
 def ordered_dates(data_dir: str) -> List[str]:
     ex_dirs = [f.name for f in os.scandir(data_dir) if f.is_dir()]
