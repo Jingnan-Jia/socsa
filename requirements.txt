@@ -1,0 +1,4 @@
+coverage==5.5
+tqdm==4.61.2
+pandas==1.0.5
+numpy==1.21.1
