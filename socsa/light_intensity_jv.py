@@ -53,13 +53,31 @@ def get_idxmin(ref_value, target):
     return idxmin
 
 
-def argmin_positive(data):
+def argmin_positive(data: pd.Series):
     data = np.array(data)
     data[data < 0] = 10000
     return np.argmin(data)
 
 
 def jv(ex_ids, data_dir, target_dir):
+    """
+    Main function to get jv.
+    Args:
+        ex_ids: experiment IDs in this batch of data
+        data_dir: directory of this batch of data
+        target_dir: directory to save the post-processing data
+
+    Returns:
+        None.
+
+    Examples:
+        >>> abs_dir_path = os.path.dirname(os.path.realpath(__file__))
+        >>> source_dir = os.path.join(abs_dir_path, "data", "Light intensity-5.5 test")
+        >>> device_ids = ['60', '62', '75']
+        >>> target_dir = os.path.join(source_dir, "after_processing")
+        >>> jv(device_ids, source_dir, target_dir)
+
+    """
     for ex_id in ex_ids:  # 对每一组实验都进行如下操作
         print("实验序号: ", ex_id)  # 打印一下电池序号
         print("=============")
