@@ -22,4 +22,4 @@ pip install socsa
 
 # Getting started
 
-
+[Documentation](https://socsa.readthedocs.io/en/latest/)
