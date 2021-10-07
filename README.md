@@ -3,7 +3,7 @@
 # SOCSA 
 > **SO**lar **C**ell **S**tability **A**nalysis 
 
-[![codecov](https://codecov.io/gh/Jingnan-Jia/socsa/branch/master/graph/badge.svg?token=Z808SDKUFQ)](https://codecov.io/gh/Jingnan-Jia/socsa)
+[![codecov](https://codecov.io/gh/Jingnan-Jia/socsa/branch/master/graph/badge.svg?token=PS9IOEYHT5)](https://codecov.io/gh/Jingnan-Jia/socsa)
 ![example workflow](https://github.com/Jingnan-Jia/socsa/actions/workflows/test_and_coverage.yml/badge.svg)
 
 
