@@ -2,6 +2,7 @@
 import unittest
 import coverage
 COV_FLAG = True
+
 if __name__ == "__main__":
     if COV_FLAG:
         cov = coverage.coverage()
