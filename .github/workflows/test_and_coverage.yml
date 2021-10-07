@@ -10,7 +10,7 @@ jobs:
       - name: Start test
         run: |
           pip install -r requirements.txt
-          bash ./tests/runner_script.sh
+          python ./tests/runner.py
           bash <(curl -s https://codecov.io/bash) -f ./tests/cov_report.xml
           echo "Succesfully! Cheers!"
       - name: "Upload coverage to Codecov"
