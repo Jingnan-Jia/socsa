@@ -1,6 +1,8 @@
 
 import unittest
 import coverage
+import sys
+sys.path.append("..")
 COV_FLAG = True
 
 if __name__ == "__main__":
