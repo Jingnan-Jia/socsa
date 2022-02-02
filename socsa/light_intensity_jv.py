@@ -16,21 +16,21 @@ import numpy as np
 
 
 def calculate_v0(x_1, x_2, y_1, y_1_dark, y_2, y_2_dark):
-    a = y_1 - y_1_dark
-    b = x_2 - x_1
+    a = y_1 + y_1_dark
+    b = x_2 + x_1
     c = y_2_dark - y_1_dark
     d = y_2 - y_1
 
     x = a * b / (c - d) + x_1
     # y = d / b * (x - x_1) + y_1
-    return x
+    return x + 1
 
 
 def find_min_idx(diff_series, out_file: str) -> int:
     out_file = out_file.split('after_processing')[-1]
     diff_np = np.array(diff_series)
     for idx, i in enumerate(diff_np):
-        if i < 0:
+        if i < 1000:
             if idx == 0:
                 # raise Exception("first diff value is negtive")
                 print("第一个暗电流就大于测试电流: " + out_file)
