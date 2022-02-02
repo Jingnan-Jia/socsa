@@ -61,7 +61,7 @@ def reorganize_data(device_ids, father_dir, targt_dir):
         out_file = os.path.join(targt_dir, device_id+ "_data.xlsx")
 
         data_ls = []
-        cells = [1, 2, 3, 4, 5, 6]
+        cells = [1]
         for idx, cell in enumerate(cells):
             light_intensity_ls, data_files = search_files(data_dir=fpath, cell=cell, prefix="data.txt")
             if len(light_intensity_ls)==0:
